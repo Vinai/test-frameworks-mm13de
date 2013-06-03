@@ -1,0 +1,47 @@
+
+#
+# customer authenticate fixture
+#
+
+scope:
+  website:
+    - website_id: 1
+      code: base
+      name: Main Website
+      default_group_id: 1
+  group:
+    - group_id: 1
+      website_id: 1
+      name: Main Store
+      default_store_id: 1
+      root_category_id: 2 # Default Category
+  store:
+      - store_id: 1
+        website_id: 1
+        group_id: 1
+        code: default
+        name: Default Store View
+        is_active: 1
+
+tables:
+  tax/tax_class:
+    - class_id: 3
+      class_name: Retail Customer
+      class_type: CUSTOMER
+
+  customer/customer_group:
+    - customer_group_id: 1
+      customer_group_code: General
+      tax_class_id: 3
+
+eav:
+  customer:
+    - entity_id: 1
+      email: authenticate-test@example.com
+      attribute_set_id: 0 # as turns out, this is required for customers
+      website_id: 1
+      store_id: 1
+      firstname: Homer
+      lastname: Simpson
+      group_id: 1
+      password_hash: d2c1d4338696b234191ba5a901b32a2b:aXc # @.-test123 K

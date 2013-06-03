@@ -1,0 +1,9 @@
+product_detail:
+    mca: %productUrlKey%.html
+    title: %productName%
+    uimap:
+        fieldsets:
+            -
+                price_box:
+                    pageelements:
+                        special_price: //div[@class="price-box"]/p[@class="special-price"]/span[@class="price"]

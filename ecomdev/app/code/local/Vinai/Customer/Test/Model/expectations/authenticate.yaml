@@ -1,0 +1,23 @@
+
+#
+# expectations
+#
+
+# valid credentials
+"authenticate-test@example.com  @.-test123 K":
+  valid: true
+
+# invalid password
+"authenticate-test@example.com  .-test123 K":
+  valid: false
+  exception_class: Mage_Core_Exception
+  exception_message: Invalid login or password.
+  exception_code: 2
+
+# invalid email
+"authenticate-test@invalid.com  @.-test123 K":
+  valid: false
+  exception_class: Mage_Core_Exception
+  exception_message: Invalid login or password.
+  exception_code: 2
+

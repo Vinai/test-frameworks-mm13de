@@ -1,0 +1,22 @@
+
+# Product that has all needed fields set to be visible in frontend
+# Plus a special price and an known url-key
+# Prefix attributes with backend tab
+product_special_price:
+    product_attribute_set: Default
+    general_name: Special Price Simple Product(%randomize%)
+    general_description: Long Description
+    general_short_description: Short Description
+    general_sku: special_price_sku_%randomize%
+    general_url_key: special-price-product-%randomize%
+    general_weight: 1.14
+    general_status: Enabled
+    general_visibility: Catalog, Search
+    prices_price: 10.99
+    prices_special_price: 9.99
+    prices_tax_class: None
+    inventory_qty: 999
+    inventory_stock_availability: In Stock
+    websites: Main Website
+    categories: Default Category
+    custom_options_data: %noValue%

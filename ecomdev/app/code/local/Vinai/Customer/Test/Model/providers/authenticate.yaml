@@ -1,0 +1,19 @@
+
+#
+# data provider
+#
+# website code, email, password
+#
+
+- # valid email & password
+  - base
+  - authenticate-test@example.com
+  - @.-test123 K
+- # valid email & invalid password
+  - base
+  - authenticate-test@example.com
+  - .-test123 K
+- # invalid email & valid password
+  - base
+  - authenticate-test@invalid.com
+  - @.-test123 K
