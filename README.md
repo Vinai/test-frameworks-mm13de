@@ -4,5 +4,5 @@
 
 For more information please follow [@VinaiKopp](https://twitter.com/VinaiKopp)
 
-I'll add a link to the slides once they are online.
+Link to [the slides](http://netzarbeiter.com/media/mm13/).
 
